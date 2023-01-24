@@ -14,7 +14,7 @@ router.get('/', async(req, res) => {
             "id": "${format.geraGUID()}",
             "atividade": "${data.activity}",
             "tipo": "${data.type}",
-            "participantes": "${data.participants}",
+            "participantes": ${data.participants},
             "acessibilidade": "${format.acessibilidade(data.accessibility)}"
         }`);
 

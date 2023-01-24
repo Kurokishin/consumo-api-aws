@@ -13,8 +13,8 @@ router.get('/', async(req, res) => {
         { 
             "data_atualizacao": "${format.formatDate(data.updated_at)}",
             "data_criacao": "${format.formatDate(data.created_at)}",
-            "icon": "${data.icon_url}",
-            "id":" ${format.geraGUID()}",
+            "icone": "${data.icon_url}",
+            "id":"${format.geraGUID()}",
             "piada": "${format.caixaAlta(data.value)}",
             "referencia": "${data.url}"
         }`);

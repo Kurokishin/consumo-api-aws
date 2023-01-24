@@ -4,6 +4,8 @@ module.exports = {
         let date = data.slice(0,11)
         // Transforma em objeto data e utiliza a função toLocal para exibir no formato brasileiro
         date = new Date(date).toLocaleDateString('pt-br')
+        // Adicionando o formato da data como dd-mm-aaaa
+        date = date.replace(/\//g, "-")
         // Retorna a data formatada
         return date
     },
